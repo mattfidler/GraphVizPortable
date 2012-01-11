@@ -59,13 +59,13 @@ SectionGroup /e "Graph Viz Portable" sec_graph_viz_portable ; Collapsed
   Section /o "Include Headers" sec_include_headers ; Unchecked (/o)
     ; Description:
     ; These are the c headers to include
-    SetOutPath "$INSTDIR\include"
+    SetOutPath "$INSTDIR\App\include"
     File /r "..\..\App\include\*.*"
   SectionEnd ; sec_include_headers
   Section /o "Unix Man Pages" sec_unix_man_pages ; Unchecked (/o)
     ; Description:
     ; Unix Man Pages
-    SetOutPath "$INSTDIR\share\man"
+    SetOutPath "$INSTDIR\App\share\man"
     File /r "..\..\App\share\man\*.*"
   SectionEnd ; sec_unix_man_pages
   Section /o "Portable App Build Sources" sec_portable_app_build_sources ; Unchecked (/o)
