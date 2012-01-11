@@ -1,0 +1,7 @@
+App/bin/*
+App/etc/*
+App/include/*
+App/lib/*
+App/share/*
+App/fontconfig_fix.dll
+/GVEditPortable.exe

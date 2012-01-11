@@ -1,0 +1,5 @@
+#+TITLE: GraphVizPortable
+#+AUTHOR: Matthew L. Fidler
+This was made so I can use PlantUML under org-mode.  The release will
+be at Google Code.  This is made by extracting the MSI without
+installing any components from the released GraphViz software.
