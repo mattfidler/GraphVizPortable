@@ -1,6 +1,8 @@
 #+TITLE: GraphVizPortable
 #+AUTHOR: Matthew L. Fidler
 This was made so I can use PlantUML under org-mode.  The release will
-be at Google Code.  This is made by extracting the MSI without
+be at [[http://graph-viz-portable.googlecode.com/files/GVEditPortable-Install-2.26.3.1.exe][Google Code]].  This is made by extracting the MSI without
 installing any components from the released GraphViz software.  See
 http://www.jsware.net/jsware/msicode.php5
+
+
