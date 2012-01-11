@@ -3,8 +3,6 @@ SetCompress Auto
 SetCompressor /SOLID lzma
 SetCompressorDictSize 32
 SetDatablockOptimize On
-SilentInstall Silent
-AutoCloseWindow True
 RequestExecutionLevel user
 OutFile "..\..\GVEditPortable-Install-${VER}.exe"
 Icon "..\..\App\AppInfo\appicon.ico"
@@ -21,7 +19,6 @@ BrandingText "GraphVizPortable"
 !define MUI_PAGE_HEADER_SUBTEXT "GraphViz on the Go"
 
 !define MUI_COMPONENTSPAGE_SMALLDESC
-!define MUI_HEADERIMAGE_RIGHT
 
 !insertmacro MUI_PAGE_WELCOME
 !insertmacro MUI_PAGE_LICENSE "..\..\App\share\license.rtf"
@@ -111,5 +108,6 @@ Function .onInit
   StrCpy $PA ""
   ${GetDrives} "FDD+HDD" "GetDriveVars"
   StrCpy $INSTDIR "$PA\GraphVizPortable"
-  SectionSetFlags ${sec_graph_viz_binaries} ${SF_RO}
+  IntOp $0 ${SF_RO} | ${SF_SELECTED}
+  SectionSetFlags ${sec_graph_viz_binaries} $0
 FunctionEnd
